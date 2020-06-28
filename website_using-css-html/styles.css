@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.header{
+	position: relative;
+}
+
+p{
+	margin-bottom: 15px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #a9a9a9;
+}
+
+
+.navbar{
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.brand_name a{
+	color: white;
+	font-family: "Baloo Da 2", serif;
+	letter-spacing: 0.2rem;
+	font-weight: 900;
+	font-size: large;
+}
+
+.navbar_items ul{
+	display: flex;
+}
+
+.navbar_items ul li{
+	margin: 0 10px;
+}
+
+.navbar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+}
+
+
+.bg_image{
+	background: url('images/interior-design-of-home.jpg') no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bg_content{
+	
+	position: absolute;
+	top: 7%;
+	left: 10%;
+	text-transform: uppercase;
+	font-family: "Baloo Da 2", serif;
+	line-height: 38px;
+	justify-content: center;
+	letter-spacing: 0.2rem;
+	color: rgb(15, 70, 67);
+
+}
+
+.bg_content a{
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+.social_media{
+	justify-content: right;
+
+}
+
+
+/* About */
+.about
+{	
+	background: #daf1ec;
+	text-align: center;
+	padding: 5% 10%;
+}
+
+.about_image{
+    background: url('images/people-gathered-inside-one-room.jpg') no-repeat ;
+    
+	background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.abt_content h1{
+	text-align: center;
+    color: cadetblue;
+    
+}
+.about_containner{
+   height: 75vh;
+   width: 30%;
+   background: rgba(0, 0, 0,0.6); 
+   position: absolute;
+   top: 120%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ ;
+
+}
+.btn  {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid rgb(15, 70, 67); ;
+    color: #1f191b;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.btn:hover{
+    background: rgb(163, 180, 180);
+    color: white;
+}
+ 
+.services{
+	text-align: center;
+	padding: 5% 10%;
+	background: #f5f5f5;
+}
+
+.our_services {
+	
+    margin-top: 35px;
+	text-align: center;
+	margin-bottom: 20px;
+	
+	justify-content: space-between;
+}
+
+/*contact*/
+.contact{
+	padding: 5% 10%;
+	text-align: center;
+	background: #d6e7e6;
+	
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+.form_box {
+	padding-top: 5%  10%;
+	width: 500px;
+	background:transparent;
+	padding: 12px 20px; 
+	height: auto;
+	resize: none;
+	
+}
+
+.form{
+	
+	transition: all 4s ease-in-out;
+}
+
+.form_control{
+	width: 250px;
+	background:transparent;
+	border:none;
+	outline:none;
+	border-bottom: 5px solid gray;
+	color:black;
+	margin-bottom: 16px;
+	font-size: 18px;
+	position: static;
+}
+
+.input{
+	height: 45px;
+
+}
+
+form .submit{
+background: #ff5722;
+border-color: transparent;
+font-size: 20px;
+letter-spacing: 2px;
+height: auto;
+margin-top: 5px;
+
+
+}
+
+form .submit:hover{
+	background-color: #f44336;
+	cursor: pointer;
+}
+
+
+/*footer*/
+.footer{
+	width: 100%;
+	background: #444444;
+    padding: 20px 0;
+	bottom: 100px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.footer a{
+    color: #fff;
+    top: 100%;
+    bottom: 0 ;
+}
+
+.copyright p{
+	font-family: "Baloo Da 2", serif;
+	font-size: 1.6rem;
+	color: #a7a7a7;
+  }
+  
+  .social_media a {
+	  text-align: right;
+	  justify-content: right;
+	margin: 0 1rem;
+
+	
+  }
+  
+  .social_media i {
+	justify-content: right;
+	font-size: 1.3rem;
+	color: #a7a7a7;
+	margin-bottom: 0;
+  }
+
+/*responsive*/
+@media only screen and (max-width: 420px){
+  
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.brand_name{
+		margin-bottom: 25px;
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+	}
+
+	.banner_content{
+		margin-top: 35px;
+	}
+	.form_box{
+		margin-bottom: 16px;
+	}
+	
+	.contact{
+		text-align: center;
+	}
+	.footer{
+		justify-content: center;
+  	align-items: center;
+	}
+  }
+}
+
+/*tab */
+@media only screen and (min-width: 421px) {
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.brand_name{
+		margin-bottom: 25px;
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+	}
+
+	.banner_content{
+		margin-top: 35px;
+	}
+
+    .form_box{
+		margin-bottom: 16px;
+	}
+	
+	.contact{
+		text-align: center;
+	}
+	.footer{
+		justify-content: center;
+  	align-items: center;
+	}
+  }
+}
+
+
+/* desktop */
+@media only screen and (min-width: 1024px){
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.brand_name{
+		margin-bottom: 25px;
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+	}
+
+	.banner_content{
+		margin-top: 35px;
+	}
+	.form_box{
+		margin-bottom: 16px;
+	}
+    
+	.contact{
+		text-align: center;
+	}
+	.footer{
+		justify-content: center;
+  	align-items: center;
+	}
+  }
